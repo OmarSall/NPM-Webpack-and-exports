@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(217, 217, 217);
+  padding: 20px;
+  text-align: center;
+}
+
+.task-input {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.column {
+  background: white;
+  border: 1px solid black;
+  width: 200px;
+  min-height: 300px;
+  padding: 0px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.column h3 {
+  margin: 0;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.task {
+  padding: 10px;
+  margin: 5px;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.left-button,
+.right-button,
+.center-button {
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  color: green;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.right-button {
+  justify-content: flex-end;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.delete,
+button.move {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.delete {
+  color: red;
+}
