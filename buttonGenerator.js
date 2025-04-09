@@ -23,8 +23,9 @@ export function getMoveButton(columnId, side) {
         target = "doing";
     }
 
-    if (!buttonClass) return "";
-
+    if (!buttonClass) {
+        return "";
+    }
     return `<button class="${buttonClass} ${side}-button" title="${title}" data-target="${target}">${side === "right" ? "🡺" : "🡸"}</button>`;
 }
 

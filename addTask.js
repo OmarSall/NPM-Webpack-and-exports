@@ -1,4 +1,4 @@
-import { getMoveButton } from "./dom.js";
+import { getMoveButton } from "./buttonGenerator.js";
 
 export function addTaskToColumn(columnId, taskName) {
     const column = document.getElementById(columnId);

@@ -1,5 +1,5 @@
-import { addTaskToColumn } from "./tasks.js";
-import { getMoveButton } from "./dom.js"
+import { addTaskToColumn } from "./addTask.js";
+import { getMoveButton } from "./buttonGenerator.js"
 
 const addTaskButton = document.getElementById("addTask");
 
@@ -39,11 +39,11 @@ document.body.addEventListener("click", (event) => {
         const buttonsContainer = taskElement.querySelector(".task-buttons");
         if (buttonsContainer) {
             buttonsContainer.innerHTML = `
-            <div class="left-button">${getMoveButton(targetColumnId, "left")}</div>
-            <div class="center-button">
-            <button class="delete" title="Delete">🗑️</button>
-            </div>
-            <div class="right-button">${getMoveButton(targetColumnId, "right")}</div>
+                <div class="left-button">${getMoveButton(targetColumnId, "left")}</div>
+                <div class="center-button">
+                <button class="delete" title="Delete">🗑️</button>
+                </div>
+                <div class="right-button">${getMoveButton(targetColumnId, "right")}</div>
             `;
         }
     }
