@@ -9,14 +9,14 @@ export function getMoveButton(columnId, side) {
     }
    
     if (columnId === "doing" && side === "left") {
-            title = "Move to To Do";
-            target = "toDo";
-        }
+        title = "Move to To Do";
+        target = "toDo";
+    }
 
     if (columnId === "doing" && side === "right") {
-            title = "Move to Done";
-            target = "done";
-        }
+        title = "Move to Done";
+        target = "done";
+    }
 
     if (columnId === "done" && side === "left") {
         title = "Move to Doing";
@@ -28,5 +28,3 @@ export function getMoveButton(columnId, side) {
     }
     return `<button class="${buttonClass} ${side}-button" title="${title}" data-target="${target}">${side === "right" ? "🡺" : "🡸"}</button>`;
 }
-
-
